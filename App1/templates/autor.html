@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Autor</title>
+</head>
+<body>
+     <h1>{{objeto.nombre}}</h1>
+     <ul>
+
+         <!-- Se debe escribir el nombre del modelo en minuscula 'class FraseB' y se agrega "_set" frasebd_set-->
+     {% for i in objeto.frasebd_set.all%}
+
+    <li>
+        {{i.cita}}
+    </li>
+
+{% endfor%}
+         </ul>
+</body>
+</html>
